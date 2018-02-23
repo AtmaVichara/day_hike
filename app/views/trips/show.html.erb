@@ -1,0 +1,8 @@
+<h1><%= @trip.name %></h1>
+<li>Longest Hike Distance: <%= @trip.longest_distance %></li>
+<li>Average Hike Distance: <%= @trip.average_distance %></li>
+<li>Average Hike Distance: <%= @trip.average_distance %></li>
+
+<% @trip.trails.each do |trail| %>
+  <li><%= link_to trail.name, trail_path(trail) %></li>
+<% end %>
