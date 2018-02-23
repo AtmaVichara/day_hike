@@ -10,8 +10,6 @@ describe "as a visitor" do
 
       visit trips_path
 
-      save_and_open_page
-
       expect(page).to have_link(trip.name)
       expect(page).to have_link(trip2.name)
       expect(page).to have_link(trip3.name)
